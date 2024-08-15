@@ -1,0 +1,8 @@
+body{
+    background-color: #636B2F;
+}
+
+@font-face {
+    font-family: vvds-organum-normal;
+    src: url(fonts/Vintage\ Voyage\ Design\ Supply\ -\ VVDS_Organum\ Normal.otf);
+}
