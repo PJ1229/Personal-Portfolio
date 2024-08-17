@@ -1,8 +1,68 @@
-body{
-    background-color: #636B2F;
+*{
+    background-color: #808000;
 }
 
 @font-face {
     font-family: vvds-organum-normal;
-    src: url(fonts/Vintage\ Voyage\ Design\ Supply\ -\ VVDS_Organum\ Normal.otf);
+    src: url(fonts/Vintage\ Voyage\ Design\ Supply\ -\ VVDS_Organum\ Normal.otf) format("truetype");
 }
+
+@font-face {
+    font-family: tommy-hilfiger-af;
+    src: url(fonts/TOMMY___.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: gurmukhi-mn-bold;
+    src: url(fonts/Gurmukhi\ MN.ttc);
+}
+
+@font-face {
+    font-family: didot-regular;
+    src: url(fonts/Didot\ Regular.ttf);
+}
+
+div {
+    font-family: "didot-regular", sans-serif;
+}
+
+#logo{
+    width: 96px; position: absolute; top: 24px; left: 24px;
+}
+
+#buttons {
+    position: absolute;
+    font-size: 24px;
+    left: 50%;
+    transform: translate(-50%, 48px);
+    text-align: center;
+}
+
+#buttons a {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#buttons a:hover {
+    color: white;
+}
+
+#network {
+    position: absolute; 
+    right: 24px; 
+    top: 54px;
+}
+
+#network img {
+    width: 24px; padding-left: 12px; padding-right: 12px;
+}
+
+#center-piece {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
