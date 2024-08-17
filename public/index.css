@@ -51,12 +51,12 @@ div {
 
 #network {
     position: absolute; 
-    right: 24px; 
-    top: 54px;
+    right: 26px; 
+    top: 58px;
 }
 
 #network img {
-    width: 24px; padding-left: 12px; padding-right: 12px;
+    width: 20px; padding-left: 10px; padding-right: 10px;
 }
 
 #center-piece {
