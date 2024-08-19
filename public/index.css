@@ -138,13 +138,39 @@ button {
 }
 
 html::-webkit-scrollbar {
-    width: 8px;
-  }
-   
-  html::-webkit-scrollbar-track {
-    background: black;
-  }
-   
-  html::-webkit-scrollbar-thumb {
-    background: #6C6EBA;
-  }
+width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+background: black;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #6C6EBA;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 350px; /* Fixed widths for columns */
+    gap: 10px; /* Adjust the gap between items as needed */
+    justify-content: center; /* Center the grid horizontally */
+    max-width: 640px; /* Optional: Set a max-width for the container */
+    margin: 0 auto; /* Optional: Center the container if it's not full-width */
+    transform: translate(0, 125px);
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 100%; /* Adjust to fit the container or set a fixed width */
+    max-width: 350px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width value based on your breakpoint */
+    .container {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+}
