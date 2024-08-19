@@ -1,5 +1,0 @@
-deployment:
-  branch: main
-  commands:
-    - echo "Deploying application"
-    - cp -r * /home/username/public_html
