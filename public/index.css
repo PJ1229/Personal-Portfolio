@@ -156,7 +156,7 @@ background: #6C6EBA;
     justify-content: center; /* Center the grid horizontally */
     max-width: 640px; /* Optional: Set a max-width for the container */
     margin: 0 auto; /* Optional: Center the container if it's not full-width */
-    transform: translate(0, 125px);
+    transform: translate(0, 145px);
 }
 
 .item {
@@ -166,7 +166,6 @@ background: #6C6EBA;
 .item img {
     width: 100%; /* Adjust to fit the container or set a fixed width */
     max-width: 350px;
-    margin-top: 10px;
 }
 
 @media (max-width: 768px) { /* Adjust the max-width value based on your breakpoint */
