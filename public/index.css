@@ -146,7 +146,7 @@ background: black;
 }
 
 html::-webkit-scrollbar-thumb {
-background: #6C6EBA;
+background: gray;
 }
 
 .container {
