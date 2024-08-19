@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: vvds-organum-normal;
-    src: url(fonts/Vintage\ Voyage\ Design\ Supply\ -\ VVDS_Organum\ Normal.otf) format("truetype");
+    font-family: linden-hill-italic;
+    src: url(fonts/LindenHill-Italic.ttf) format("truetype");
 }
 
 @font-face {
@@ -136,3 +136,15 @@ button {
     border: none;
     z-index: 1;
 }
+
+html::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  html::-webkit-scrollbar-track {
+    background: black;
+  }
+   
+  html::-webkit-scrollbar-thumb {
+    background: #6C6EBA;
+  }
