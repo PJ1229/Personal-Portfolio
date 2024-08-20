@@ -85,23 +85,23 @@ button {
     transform: translate(-50%, -50%);
 }
 
-.text{
+#text{
     max-width: 768px; margin: auto; padding-left: 24px; padding-right: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;
 }
 
-.text p{
+#text p{
     font-size: 22px; text-align: left; width: 100%; font-family: 'didot-regular';
 }
 
-.text p b{
+#text p b{
     font-size: 36px; font-family: 'linden-hill-italic'; font-weight: normal;
 }
 
-.text p a{
+#text p a{
     color: purple;
 }
 
-.mobile #menu-button {
+#menu-button {
     font-size: 48px;
     color: black;
     border: none;

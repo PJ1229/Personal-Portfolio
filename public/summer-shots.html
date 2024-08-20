@@ -8,23 +8,14 @@
     <link rel="icon" href="images/logo-text.png" type="image/icon type">
 </head>
 <body>
-    <a href="index.html"><img src="images/logo.png" id="logo"></a>
-    <section id="nav-bar" class="desktop">
-        <div id="buttons">
-            <a href="aboutme.html">ABOUT ME</a>
-            <a href="projects.html">PROJECTS</a>
-            <a target="_blank" href="https://pjkim.substack.com/">NEWSLETTER</a>
-        </div>
-        <div id="network">
-            <a target="_blank" href="https://www.instagram.com/pj.k1m/"><img src="images/icons8-instagram-96.png" style="width: 24px;"></a>
-            <a target="_blank" href="https://www.youtube.com/@pjkim61"><img src="images/icons8-youtube-logo-96.png" style="width: 24px;"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/peter-kim-34719126b/"><img src="images/icons8-linkedin-96.png" style="width: 24px;"></a>
-            <a target="_blank" href="https://github.com/PJ1229"><img src="images/icons8-github-96.png" style="width: 24px;"></a>
-            <a target="_blank" href="mailto:peterjoe2005@gmail.com"><img src="images/icons8-mail-96.png" style="width: 24px;"></a>
-        </div>
-    </section>
-    <section id="nav-bar" class="mobile">
-        <button id="menu-button" class="menu-button">&#9776;</button>
+    <style>
+        *{
+            background-color: white;
+        }
+    </style>
+    <a href="index.html"><img src="images/logo.png" id="logo" style="z-index: 2;"></a>
+    <div style="text-align: center; width: 100%; position: absolute; font-size: 64px; z-index: 1; margin-top: 36px;" class="desktop">SUMMER SHOTS</div>
+    <button id="menu-button" class="menu-button" style="background-color: transparent; z-index: 1;">&#9776;</button>
         <button id="close-button" class="close-button"></button>
         <div id="nav-menu" class="nav-menu">
             <ul>
@@ -48,20 +39,18 @@
                 </li>
             </ul>
         </div>
-    </section>
     
 
     <section id="content">
-        <div class="text">
+        <div id="text">
             <img src="images/projects-summer-shots.png" style="width: 100%; padding-bottom: 24px; padding-top: 64px;">
             <p>
-                <b>SUMMER SHOTS</b><br>
                 a short film i made to work on color grading<br>
                 to learn more, check it out on <a target="_blank" href="https://www.instagram.com/p/C-sTDmCxXbc/"><i>insta</i></a> or <a target="_blank" href="https://www.youtube.com/watch?v=udXeOOQQxbU"><i>youtube</i></a>.
             </p>
         </div>
     </section>
     <script src="mobile-vs-desktop.js"></script>
-    <script src="menu.js"></script>
+    <script src="projects-menu.js"></script>
 </body>
 </html>
