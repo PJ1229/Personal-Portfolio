@@ -175,6 +175,15 @@ background: gray;
     transform: translate(0, 145px);
 }
 
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 100%; /* Adjust to fit the container or set a fixed width */
+    max-width: 350px;
+}
+
 @media (max-width: 768px) { /* Adjust the max-width value based on your breakpoint */
     .container {
         grid-template-columns: 1fr; /* Switch to a single column layout */
