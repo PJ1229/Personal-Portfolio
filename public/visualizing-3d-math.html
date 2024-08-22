@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing 3D Math - PJ Kim</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo-text.png" type="image/icon type">
+</head>
+<body>
+    <style>
+        *{
+            background-color: white;
+        }
+    </style>
+    <a href="index.html"><img src="images/logo.png" id="logo" style="z-index: 2;"></a>
+    <div style="text-align: center; width: 100%; position: absolute; font-size: 48px; z-index: 1; margin-top: 44px;" class="desktop">3D MATH RENDERER</div>
+    <button id="menu-button" class="menu-button" style="background-color: transparent; z-index: 1;">&#9776;</button>
+        <button id="close-button" class="close-button"></button>
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="https://pjkim.substack.com/" target="_blank">NEWSLETTER</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pj.k1m/" target="_blank"><img src="images/icons8-instagram-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@pjkim61" target="_blank"><img src="images/icons8-youtube-logo-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/peter-kim-34719126b/" target="_blank"><img src="images/icons8-linkedin-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/PJ1229" target="_blank"><img src="images/icons8-github-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="mailto:peterjoe2005@gmail.com"><img src="images/icons8-mail-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <section id="content">
+        <div class="container" style="gap: 15px;">
+            <img class="item" src="images/visualizing-3d-math-1.png" style="width: 100%;">
+            <img class="item" src="images/visualizing-3d-math-4.png" style="width: 100%;">
+            <img class="item" src="images/visualizing-3d-math-3.png" style="width: 100%;">
+            <img class="item" src="images/visualizing-3d-math-2.png" style="width: 100%;">
+        </div>
+        <p style="font-size: 24px; max-width: 700px; margin: auto; margin-top: 170px; padding: 24px; margin-bottom: 100px; font-family: 'didot-regular'">
+            i created a tool to visualize 3d math functions and linear transformations. 
+            users can enter a math function, and it will graph with coloring based on x, y, and z axis. 
+            users can also apply linear transformations such as shear, rotate, and scale. 
+            the program was written in C++ using SFML. <br><br>
+            to learn more, check it out on <a target="_blank" href="https://youtu.be/iKKHzpIKJgA"><i>youtube</i></a> or <a target="_blank" href="https://github.com/PJ1229/3D-Rendering-Software-SFML"><i>github</i></a>.<br>
+            <br>
+            <i>published on april 26th, 2024</i>
+        </p>
+        
+    </section>
+    <script src="mobile-vs-desktop.js"></script>
+    <script src="projects-menu.js"></script>
+</body>
+</html>
