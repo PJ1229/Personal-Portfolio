@@ -40,10 +40,6 @@ button {
     width: 96px; position: absolute; top: 24px; left: 24px; background-color: transparent;
 }
 
-#logo:hover{
-    filter: invert(1);
-}
-
 #buttons {
     position: absolute;
     font-size: 24px;
