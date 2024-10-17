@@ -191,3 +191,10 @@ background: gray;
         grid-template-columns: 1fr; /* Switch to a single column layout */
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(4, 350px); /* 4 columns for wider screens */
+        max-width: 1440px; /* Adjust max-width for wider screens */
+    }
+}
