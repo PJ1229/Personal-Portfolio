@@ -42,9 +42,9 @@ button {
 
 #buttons {
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     left: 50%;
-    transform: translate(-50%, 48px);
+    transform: translate(-50%, 56px);
     text-align: center;
 }
 
