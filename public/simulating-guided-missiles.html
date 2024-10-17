@@ -13,12 +13,11 @@
             background-color: white;
         }
     </style>
-    <a href="index.html"><img src="images/logo.png" id="logo" style="z-index: 2;"></a>
-    <div style="text-align: center; width: 100%; position: absolute; font-size: 48px; z-index: 1; margin-top: 44px;" class="desktop">MISSILE PATHFINDING</div>
     <button id="menu-button" class="menu-button" style="background-color: transparent; z-index: 1;">&#9776;</button>
         <button id="close-button" class="close-button"></button>
         <div id="nav-menu" class="nav-menu">
             <ul>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html">ABOUT ME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="film.html">FILM</a></li>
@@ -43,20 +42,52 @@
     
 
     <section id="content">
-        <div class="container" style="gap: 15px;">
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 36px; max-width: 700px; margin: auto; margin-top: 150px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: bold;">Missile Pathfinding</div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 0px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <i>PJ Kim / March 24th, 2024</i>
+        </p>
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <a target="_blank" href="https://www.youtube.com/watch?v=AyyewS0l8y8&t=134s"><img style="height: 28px; padding-left: 0;" src="images/icons8-youtube-logo-96.png"></a>
+            <a target="_blank" href="https://github.com/PJ1229/Simulating-Guiding-Missiles"><img style="height: 28px; padding-left: 5px;" src="images/icons8-github-96.png"></a>
+        </div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            C++, SFML, Pathfinding, Computer Graphics
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 10px; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Introduction</b><br>
+            I wanted to create a game to simulate missile pathfinding. 
+            Players move around as a tank and try to target and shoot moving fighter jets. 
+            I chose this project to learn more about pathfinding, differential equations, and C++.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">How I built it</b><br>
+            I programmed the software in C++ using the SFML library and developed the entire program in Visual Studio.
+            <br><br>
+            For the missile pathfinding, I employed several optimization techniques. To detect obstacles, I calculated the convex hull of the obstacles using a gift wrapping algorithm. The convex hull is the smallest convex polygon that contains all the points of the obstacles, which helps prevent missiles from getting stuck in concave shapes.
+            <br><br>
+            For pathfinding around obstacles, I used a method inspired by ray marching. Typically used in 3D computer graphics, ray marching helped me detect the location of obstacles in the 2D space of the missile’s environment. With this information, the missile could calculate a safe path around the obstacles.
+            <br><br>
+            Finally, I used differential equations to determine the missile's trajectory toward the moving target, once a clear path was found. By employing a pursuit curve, the missile follows the optimal route from its current position to the moving fighter jet.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Conclusion</b><br>
+            I'm happy with the results of this project. 
+            I learned a lot about pathfinding, differential equations, and C++. I also improved my problem-solving skills and gained experience in game development. 
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">What's Next?</b><br>
+            There are a lot of optimizations still left for this project. 
+            One big improvement would be to implement a more efficient pathfinding algorithm such as A star or Dijkstra's algorithm. 
+            However, It was still a lot of fun developing my own pathfinding algorithm.
+        </p>
+        <div class="container" style="gap: 15px; margin-top: -100px;">
             <img class="item" src="images/simulating-guided-missiles-1.png" style="width: 100%;">
             <video class="item" src="images/simulating-guided-missiles-2.MOV" style="width: 100%;" controls autoplay loop></video>
             <video class="item" src="images/simulating-guided-missile-3.mov" style="width: 100%;" controls autoplay loop></video>
             <img class="item" src="images/simulating-guided-missiles-4.png" style="width: 100%;">
         </div>
-        <p style="font-size: 24px; max-width: 700px; margin: auto; margin-top: 170px; padding: 24px; margin-bottom: 100px; font-family: 'didot-regular'">
-            i created a game to simulate missile pathfinding. 
-            players move around as a tank and try to target and shoot moving fighter jets. 
-            there is incorporated pathfinding in the missiles using ray marching. 
-            the program was written in C++ using SFML. <br><br>
-            to learn more, check it out on <a target="_blank" href="https://www.youtube.com/watch?v=AyyewS0l8y8&t=134s"><i>youtube</i></a>.<br>
-            <br>
-            <i>published on march 24th, 2024</i>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 250px; padding: 24px; margin-bottom: 50px; font-family: 'didot-regular'; text-align: center; font-weight: lighter;">
+            pjk1m.com - 2024
         </p>
         
     </section>
