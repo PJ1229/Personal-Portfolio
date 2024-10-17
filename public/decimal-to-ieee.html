@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to IEEE 754 - PJ Kim</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo-text.png" type="image/icon type">
+</head>
+<body>
+    <style>
+        *{
+            background-color: white;
+        }
+    </style>
+    <button id="menu-button" class="menu-button" style="background-color: transparent; z-index: 1;">&#9776;</button>
+        <button id="close-button" class="close-button"></button>
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="film.html">FILM</a></li>
+                <li><a href="https://pjkim.substack.com/" target="_blank">NEWSLETTER</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pj.k1m/" target="_blank"><img src="images/icons8-instagram-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@pjkim61" target="_blank"><img src="images/icons8-youtube-logo-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/peter-kim-34719126b/" target="_blank"><img src="images/icons8-linkedin-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/PJ1229" target="_blank"><img src="images/icons8-github-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="mailto:peterjoe2005@gmail.com"><img src="images/icons8-mail-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <section id="content">
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 36px; max-width: 700px; margin: auto; margin-top: 150px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: bold;">Decimal to IEEE 754 Converter</div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 0px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <i>PJ Kim / September 26th, 2024</i>
+        </p>
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <a target="_blank" href="https://decimal-to-iee735-converter-5fd8aa9261d1.herokuapp.com/"><img style="height: 28px; padding-left: 0;" src="images/icons8-globe-96.png"></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=zeLqOJCJg-Q&t=9s"><img style="height: 28px; padding-left: 5px;" src="images/icons8-youtube-logo-96.png"></a>
+            <a target="_blank" href="https://github.com/PJ1229/Decimal_to_IEEE754_Converter"><img style="height: 28px; padding-left: 5px;" src="images/icons8-github-96.png"></a>
+        </div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            Python, Flask, HTML, CSS
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 10px; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Introduction</b><br>
+            The goal of this project was to develop a web application that converts decimal numbers into IEEE 754 floating-point representations. This application allows users to select different levels of precision, providing flexibility for various numerical needs. Additionally, the application includes detailed explanations of decimal, binary, and IEEE 754 formats to help users understand the conversion process. By combining practical functionality with educational resources, the project aims to enhance user comprehension of how numbers are represented in computing.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">How I built it</b><br>
+            I built the web application using Python with the Flask framework for the backend and HTML/CSS for the frontend. Flask helped me set up routes for user requests and handle decimal-to-IEEE 754 conversions, including error handling for invalid inputs. The frontend features a user-friendly interface where users can input numbers and select precision levels. After development, I deployed the app on Heroku using Gunicorn for better performance. Throughout the process, I conducted testing and gathered feedback to refine the application, creating a functional tool for converting decimal numbers to IEEE 754 representations.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Conclusion</b><br>
+            This project was my first experience with Python and Flask, helping me learn about floating-point numbers and the IEEE 754 standard. I gained skills in data conversion and user interface design, and I learned how to deploy an app using Heroku. In the future, I plan to add more features and improve the user experience, building a solid foundation for my growth in software development.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">What's Next?</b><br>
+            Moving forward, I aim to introduce interactive visual aids that will demonstrate the conversion process step-by-step, allowing users to better grasp how each bit in the IEEE 754 representation corresponds to the original decimal value. 
+            Furthermore, I want to implement a feature for converting between different numeric bases (e.g., binary, hexadecimal) to make the tool more versatile. 
+            Finally, I plan to refine the user interface to improve accessibility and make the site more responsive across various devices.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 250px; padding: 24px; margin-bottom: 50px; font-family: 'didot-regular'; text-align: center; font-weight: lighter;">
+            pjk1m.com - 2024
+        </p>
+        
+    </section>
+    <script src="mobile-vs-desktop.js"></script>
+    <script src="projects-menu.js"></script>
+</body>
+</html>
