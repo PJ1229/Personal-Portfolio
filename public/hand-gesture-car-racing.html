@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Car Racing - PJ Kim</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo-text.png" type="image/icon type">
+</head>
+<body>
+    <style>
+        *{
+            background-color: white;
+        }
+    </style>
+    <button id="menu-button" class="menu-button" style="background-color: transparent; z-index: 1;">&#9776;</button>
+        <button id="close-button" class="close-button"></button>
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="film.html">FILM</a></li>
+                <li><a href="https://pjkim.substack.com/" target="_blank">NEWSLETTER</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pj.k1m/" target="_blank"><img src="images/icons8-instagram-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@pjkim61" target="_blank"><img src="images/icons8-youtube-logo-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/peter-kim-34719126b/" target="_blank"><img src="images/icons8-linkedin-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/PJ1229" target="_blank"><img src="images/icons8-github-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+                <li>
+                    <a href="mailto:peterjoe2005@gmail.com"><img src="images/icons8-mail-96.png" style="width: 24px; background-color: transparent;"></a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <section id="content">
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 36px; max-width: 700px; margin: auto; margin-top: 150px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: bold;">Hand Gesture Car Racing</div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 0px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <i><a href="aboutme.html" style="text-decoration: none;">PJ Kim</a> / October 14th, 2024</i>
+        </p>
+        <div style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            <a target="_blank" href="https://computer-vision-car-game-64b0183ceff3.herokuapp.com/"><img style="height: 28px; padding-left: 0;" src="images/icons8-globe-96.png"></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=YIcehiUeAZE&t=2s"><img style="height: 28px; padding-left: 5px;" src="images/icons8-youtube-logo-96.png"></a>
+            <a target="_blank" href="https://github.com/albertchenn/Hand-Gesture-Car-Racing"><img style="height: 28px; padding-left: 5px;" src="images/icons8-github-96.png"></a>
+            <a target="_blank" href="https://devpost.com/software/hand-gesture-racing-game"><img style="height: 28px; padding-left: 5px;" src="images/icons8-dev-post-100.png"></a>
+            <a target="_blank" href="https://www.instagram.com/reel/DBNc3dINjLv/"><img style="height: 28px; padding-left: 5px;" src="images/icons8-instagram-96.png"></a>
+        </div>
+        <p style="padding-left: 24px; padding-right: 24px; font-size: 18px; max-width: 700px; margin: auto; margin-top: 10px; margin-bottom: 0px; font-family: 'didot-regular'; font-weight: regular;">
+            Javascript, Google MediaPipe, PixiJS, Heroku, HTML, CSS, Node.js, Express.js
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 10px; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">What it does</b><br>
+            Our game is a racing game that requires no additional driving equipment or keyboard input. Using just your hands and computer webcam, we created a fully functional driving vehicle that can race across a course.
+            <br><br>
+            For the main driving mechanism, we split the driving into two parts: driving and steering. In order to control the driving speed, the user must move their hands closer (faster) and farther (slower). To make sure the driving is always comfortable, the user must drive in a "thumbs up" position, and can zero the velocity at any time by putting their thumbs down.
+            <br><br>
+            We created a race track to accompany the car, with a fully functional lap timer and checkpoint system, where the entire lap won't be counted until the car reaches all of the checkpoints and the finish line. Additionally, if the car leaves the track, the speed will drastically slow down.
+            <br><br>
+            Finally, we added a settings menu to fine tune any multiplier to the user's preference, including velocity and turning multipliers. We also created a stats menu in order for the user to visualize how their car is moving.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">How we built it</b><br>
+            Our two tasks were essentially computer vision, and the game itself.
+            <br><br>
+            For computer vision, we decided to use Google's open source mediapipe "Gesture Recognizer" model, ensuring that we'd have the opportunity to extract gesture data. With some somewhat straightforward math, we're able to calculate the centers of the hands and determine the angle that the hands make relative to the origin. Additionally, we used the proportion that the distance is directly proportional to 1 / Area ^ 2, allowing us to directly relate the velocity to the (relative) distance that the hands were from the screen
+            <br><br>
+            For the game, we decided to go with PixiJS, an HTML rendering engine for 2D games. We decided to create a top down racing game due to simplicity, and made the background move relative to the car, rather than the car move around a background. This allowed for bigger maps and a more natural feel to the driving. We used node.js and express.js to host the website via Heroku.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Challenges we ran into</b><br>
+            Our biggest challenge was definitely getting the driving mechanism to completely run with the movement feeling natural. The car would often fly out of the screen randomly, or the car would turn opposite to the direction we wanted to, and so on and so forth.
+            <br><br>
+            Additionally, setting up the Gesture Recognizer model and allowing it to connect with multiple hands provided a little more of a challenge than we expected. However, we were able to eventually implement the model in the end.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">Accomplishments that we're proud of</b><br>
+            I'm extremely proud of the fact that the driving in the game, once you get the hang of it, is surprisingly natural and fluid. It's impressive that we were able to capture such a solid driving experience using only a webcam and hands.
+            <br><br>
+            Additionally, it was difficult to complete all the game logic, and completing it was a task that we are proud of.
+            <br><br>
+            We were also able to clean up the code and make it neat and readable, which proved to be a huge timesaver during troubleshooting.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">What we learned</b><br>
+            We learned how to integrate computer vision into a webapp, and learning how to seemlessly integrate two different applicatoins into one big app. Additionally, we learned to be diligent with Git, and make sure we stay commiting to keep a solid commit history, in the case we want to look back in previous iterations of our code.
+        </p>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; padding: 24px; margin-bottom: 0px; font-family: 'didot-regular'">
+            <b style="font-size: 28px;">What's next?</b><br>
+            In the future, it's possible to add a leaderboard and login system, providing an ability to log and see "top times" of a track. Additionally, adding a multi-track selector would be another goal, allowing the user to pick and choose their favorite maps. Maybe we could even implement a track creator with this system. We also can add more complex driving mechanics, including drifting and a more sophisticated acceleration/braking system. For our settings, we could implement a cache system to remember the previous settings.
+        </p>
+        <div class="container" style="gap: 15px; margin-top: -100px; grid-template-columns: 1fr;">
+            <img class="item" src="images/hand-gesture-car-racing-1.png" style="width: 100%;">
+        </div>
+        <p style="font-size: 20px; max-width: 700px; margin: auto; margin-top: 250px; padding: 24px; margin-bottom: 50px; font-family: 'didot-regular'; text-align: center; font-weight: lighter;">
+            pjk1m.com - 2024
+        </p>
+        
+    </section>
+    <script src="mobile-vs-desktop.js"></script>
+    <script src="projects-menu.js"></script>
+</body>
+</html>
