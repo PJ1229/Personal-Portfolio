@@ -171,6 +171,16 @@ background: gray;
     transform: translate(0, 145px);
 }
 
+.project-container {
+    display: grid;
+    grid-template-columns: 350px 350px; /* Fixed widths for columns */
+    gap: 10px; /* Adjust the gap between items as needed */
+    justify-content: center; /* Center the grid horizontally */
+    max-width: 640px; /* Optional: Set a max-width for the container */
+    margin: 0 auto; /* Optional: Center the container if it's not full-width */
+    transform: translate(0, 145px);
+}
+
 .item {
     text-align: center;
 }
