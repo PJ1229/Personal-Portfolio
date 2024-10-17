@@ -192,6 +192,12 @@ background: gray;
     }
 }
 
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(3, 350px); /* 3 columns for medium screens */
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         grid-template-columns: repeat(4, 350px); /* 4 columns for wider screens */
