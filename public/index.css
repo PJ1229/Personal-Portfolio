@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: 'ivyora-display';
+    src: url(fonts/IvyOraDisplay-Thin.ttf) format("truetype");
+}
+
+@font-face {
     font-family: linden-hill-italic;
     src: url(fonts/LindenHill-Italic.ttf) format("truetype");
 }
@@ -181,6 +186,13 @@ background: gray;
     transform: translate(0, 145px);
 }
 
+.film-container {
+    display: grid;
+    grid-template-columns: 45% 45%; /* Fixed widths for columns */
+    justify-content: center; /* Center the grid horizontally */
+    margin: 0 auto; /* Optional: Center the container if it's not full-width */
+}
+
 .item {
     text-align: center;
 }
@@ -198,6 +210,12 @@ background: gray;
 
 @media (max-width: 768px) { /* Adjust the max-width value based on your breakpoint */
     .container {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+    .project-container {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+    .film-container {
         grid-template-columns: 1fr; /* Switch to a single column layout */
     }
 }
