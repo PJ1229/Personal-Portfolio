@@ -2,10 +2,9 @@ const desktop = document.querySelectorAll('.desktop');
 const mobile = document.querySelectorAll('.mobile');
 
 function updateVisibility() {
-    const isMobileWidth = window.innerWidth <= 1300;
-    const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    const isMobileWidth = window.innerWidth <= 1200;
 
-    if (isMobileWidth && isPortrait) {
+    if (isMobileWidth) {
         desktop.forEach(el => {
             el.style.visibility = "hidden";
         });
